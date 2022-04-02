@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Дневник Настроения</string>
+    <string name="main_menu_text">Главное Меню</string>
+    <string name="note_list_open">Список записей</string>
+    <string name="statistic_open">Статистика</string>
+    <string name="note_edit">Изменить</string>
+</resources>
