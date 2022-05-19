@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".menu.TitleFragment">
+
+    <LinearLayout
+        android:id="@+id/main_menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/small_padding"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="8dp">
+
+        <TextView
+            android:id="@+id/main_menu_text_view"
+            style="@style/ManueStyleText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:layout_margin="@dimen/small_padding"
+            android:text="@string/main_menu_text"
+            tools:layout_editor_absoluteX="8dp" />
+
+        <Button
+            android:id="@+id/list_open_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/note_list_open" />
+
+        <Button
+            android:id="@+id/new_note_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/add_new_note" />
+
+        <Button
+            android:id="@+id/stat_open_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/statistic_open" />
+
+    </LinearLayout>
+
+</layout>

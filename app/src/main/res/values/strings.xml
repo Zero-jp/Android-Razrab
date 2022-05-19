@@ -4,4 +4,16 @@
     <string name="note_list_open">Notes list</string>
     <string name="statistic_open">Statistic</string>
     <string name="note_edit">Edit</string>
+    <string name="add_new_note">New note</string>
+    <string name="save">Save</string>
+    <string name="back">Back</string>
+    <string name="emotion_stat">Detailed description of the emotional state</string>
+    <string name="emotion_category">Emotion</string>
+    <string name="date">Date</string>
+    <string name="time">Time</string>
+    <string name="chose_emotion">Emotion</string>
+    <!--Emotion Status-->
+    <string name="happy_emotion">Happy</string>
+    <string name="normal_emotion">Normal</string>
+    <string name="unhappy_emotion">Unhappy</string>
 </resources>

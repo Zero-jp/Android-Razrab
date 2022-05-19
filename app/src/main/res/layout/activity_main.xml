@@ -1,44 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:layout_marginTop="@dimen/normal_padding"
     tools:context=".MainActivity">
 
-    <TextView
-        android:id="@+id/main_menu_text_view"
-        style="@style/ManueStyleText"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="@dimen/small_padding"
-        android:text="@string/main_menu_text"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:layout_editor_absoluteX="8dp" />
-
     <LinearLayout
-        android:id="@+id/main_menu"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="@dimen/small_padding"
-        android:orientation="vertical"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/main_menu_text_view"
-        tools:layout_editor_absoluteX="8dp">
+        android:layout_height="match_parent"
+        android:background="@color/cardview_light_background">
 
-        <Button
-            android:id="@+id/list_open_btn"
+        <fragment
+            android:id="@+id/myNavHostFragment"
+            android:name="androidx.navigation.fragment.NavHostFragment"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/note_list_open" />
-
-        <Button
-            android:id="@+id/button5"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/statistic_open" />
-
+            android:layout_height="match_parent"
+            app:defaultNavHost="true"
+            app:navGraph="@navigation/navigation" />
     </LinearLayout>
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

@@ -5,4 +5,16 @@
     <string name="note_list_open">Список записей</string>
     <string name="statistic_open">Статистика</string>
     <string name="note_edit">Изменить</string>
+    <string name="add_new_note">Добавить заметку</string>
+    <string name="save">Сохранить</string>
+    <string name="back">Назад</string>
+    <string name="emotion_stat">Подробное описание эмоционального состояния</string>
+    <string name="emotion_category">Эмоция</string>
+    <string name="date">Дата</string>
+    <string name="time">Время</string>
+    <string name="chose_emotion">Эмоция</string>
+    <!--Emotion Status-->
+    <string name="happy_emotion">Счастлив(а)</string>
+    <string name="normal_emotion">Спокоен(йна)</string>
+    <string name="unhappy_emotion">Несчастен(а)</string>
 </resources>
