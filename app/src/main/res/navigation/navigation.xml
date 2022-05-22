@@ -50,7 +50,7 @@
         tools:layout="@layout/fragment_statistic" />
     <fragment
         android:id="@+id/noteView2"
-        android:name="com.igor.android.mooddiary.note_list.NoteView"
+        android:name="com.igor.android.mooddiary.note_view.NoteView"
         android:label="note_view"
         tools:layout="@layout/note_view" />
     <fragment

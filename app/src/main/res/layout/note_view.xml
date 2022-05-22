@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".note_list.NoteView">>
+    tools:context=".note_view.NoteView">>
 
     <LinearLayout
         android:id="@+id/note_data_view"

@@ -17,6 +17,9 @@ interface NoteDatabaseDao {
     @Query("SELECT * From note_table WHERE id = :key")
     fun get(key:Long): NoteInfo?
 
+    @Query("SELECT * From note_table ORDER BY id DESC LIMIT 1")
+    fun getLastNote(): NoteInfo
+
     @Query("SELECT * FROM note_table ORDER BY id DESC")
     fun getAll(): LiveData<List<NoteInfo>>
 //
