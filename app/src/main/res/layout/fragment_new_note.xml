@@ -21,10 +21,12 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:autofillHints=""
+                android:contentDescription="@string/date_format"
                 android:ems="10"
-                android:hint="@string/date"
+                android:hint="@string/date_format"
                 android:inputType="date"
-                android:textColorHint="#757575"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
                 tools:ignore="TouchTargetSizeCheck" />
 
             <Spinner
@@ -33,7 +35,8 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:contentDescription="@string/emotion_category"
-                android:minHeight="48dp" />
+                android:minHeight="48dp"
+                android:visibility="visible" />
         </LinearLayout>
 
         <ScrollView
@@ -54,7 +57,8 @@
                     android:gravity="start|top"
                     android:hint="@string/emotion_stat"
                     android:inputType="textMultiLine"
-                    android:textColorHint="#757575" />
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black" />
             </LinearLayout>
         </ScrollView>
 

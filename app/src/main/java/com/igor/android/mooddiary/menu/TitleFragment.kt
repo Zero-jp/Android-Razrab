@@ -38,9 +38,9 @@ class TitleFragment : Fragment() {
         binding.newNoteBtn.setOnClickListener {
             Navigation.findNavController(it).navigate(R.id.action_titleFragment2_to_newNoteFragment)
         }
-        binding.statOpenBtn.setOnClickListener {
-            Navigation.findNavController(it).navigate(R.id.action_titleFragment2_to_statisticFragment)
-        }
+//        binding.statOpenBtn.setOnClickListener {
+//            Navigation.findNavController(it).navigate(R.id.action_titleFragment2_to_statisticFragment)
+//        }
 
         return binding.root
     }

@@ -5,6 +5,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ArrayAdapter
 import androidx.core.view.get
 import androidx.databinding.DataBindingUtil
 import androidx.lifecycle.ViewModelProvider
@@ -12,6 +13,7 @@ import androidx.navigation.Navigation
 import com.igor.android.mooddiary.R
 import com.igor.android.mooddiary.database.NoteDatabase
 import com.igor.android.mooddiary.database.NoteInfo
+import com.igor.android.mooddiary.database.TimeRange
 import com.igor.android.mooddiary.databinding.FragmentNewNoteBinding
 
 class NewNoteFragment : Fragment() {
@@ -56,6 +58,8 @@ class NewNoteFragment : Fragment() {
             Navigation.findNavController(it).navigate(R.id.action_newNoteFragment_to_blankFragment)
         }
 
+        initializeComponents()
+
         return binding.root
     }
 
@@ -63,6 +67,9 @@ class NewNoteFragment : Fragment() {
         noteInfo.date = binding.editTextDate.text.toString()
         noteInfo.timeRange = binding.spinnerTimeRange.selectedItemPosition
         noteInfo.body = binding.editTextMultiLineNoteBody.text.toString()
+        System.out.println(noteInfo.date)
+        System.out.println(noteInfo.timeRange)
+        System.out.println(noteInfo.body)
 
 //        if (dataCheck(noteInfo))
 //            return noteInfo
@@ -84,4 +91,12 @@ class NewNoteFragment : Fragment() {
         return true
     }
 
+    private fun initializeComponents() {
+
+        binding.spinnerTimeRange.adapter = ArrayAdapter<String>(
+            this.requireContext(),
+            android.R.layout.simple_spinner_item,
+            TimeRange.values().map { it.getLabel(this.requireContext()) }
+        )
+    }
 }

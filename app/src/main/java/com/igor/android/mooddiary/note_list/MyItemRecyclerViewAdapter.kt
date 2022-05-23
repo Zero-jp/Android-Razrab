@@ -7,6 +7,7 @@ import android.widget.TextView
 
 import com.igor.android.mooddiary.placeholder.PlaceholderContent.PlaceholderItem
 import com.igor.android.mooddiary.databinding.FragmentItemBinding
+import com.igor.android.mooddiary.databinding.NoteViewBinding
 
 /**
  * [RecyclerView.Adapter] that can display a [PlaceholderItem].

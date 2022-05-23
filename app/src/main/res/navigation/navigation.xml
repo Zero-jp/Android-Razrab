@@ -17,7 +17,7 @@
         tools:layout="@layout/fragment_title">
         <action
             android:id="@+id/action_titleFragment2_to_itemFragment"
-            app:destination="@id/itemFragment" />
+            app:destination="@id/notesListFragment" />
         <action
             android:id="@+id/action_titleFragment2_to_statisticFragment"
             app:destination="@id/statisticFragment" />
@@ -65,4 +65,9 @@
             android:id="@+id/action_blankFragment_to_titleFragment2"
             app:destination="@id/titleFragment" />
     </fragment>
+    <fragment
+        android:id="@+id/notesListFragment"
+        android:name="com.igor.android.mooddiary.note_list.NotesListFragment"
+        android:label="fragment_item_list"
+        tools:layout="@layout/fragment_item_list" />
 </navigation>

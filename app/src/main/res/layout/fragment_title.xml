@@ -34,11 +34,11 @@
             android:layout_height="wrap_content"
             android:text="@string/add_new_note" />
 
-        <Button
-            android:id="@+id/stat_open_btn"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/statistic_open" />
+<!--        <Button-->
+<!--            android:id="@+id/stat_open_btn"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="@string/statistic_open" />-->
 
     </LinearLayout>
 

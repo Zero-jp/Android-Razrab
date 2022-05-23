@@ -17,4 +17,12 @@
     <string name="happy_emotion">Счастлив(а)</string>
     <string name="normal_emotion">Спокоен(йна)</string>
     <string name="unhappy_emotion">Несчастен(а)</string>
+    <!--Time Range-->
+    <string name="morning">Утро(06:00 — 11:59)</string>
+    <string name="day">День(12:00 — 17:59)</string>
+    <string name="afternoon">Вечер(18:00 — 23:50)</string>
+    <string name="night">Ночь(00:00 — 05: 59)</string>
+    <string name="hole_day">Весь день(00:00 — 23:59)</string>
+    <!--Format-->
+    <string name="date_format">ДД.ММ.ГГГГ</string>
 </resources>

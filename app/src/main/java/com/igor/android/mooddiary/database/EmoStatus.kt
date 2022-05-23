@@ -1,11 +1,7 @@
 package com.igor.android.mooddiary.database
 
-
 import android.content.Context
-import android.content.res.Resources
 import com.igor.android.mooddiary.R
-
-
 
 enum class EmoStatus(private val code: Int) {
     Happy(0),
